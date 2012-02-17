@@ -32,5 +32,13 @@ gem 'jquery-rails'
 group :test, :development do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
-gem 'sqlite3'
+  gem 'sqlite3'
+
+  # Testing setup used in: https://github.com/RailsApps/rails3-devise-rspec-cucumber/wiki/Tutorial
+  gem 'rspec-rails' # Testing tool and framework for Ruby. https://github.com/rspec/rspec-rails
+  gem 'cucumber-rails' # Lets you write tests in plain english. http://cukes.info/
+  gem 'capybara' # Helps simulate user front-end interactions. https://github.com/jnicklas/capybara
+  gem 'factory_girl' # Fixture replacement used to create test data. https://github.com/thoughtbot/factory_girl
+  gem 'database_cleaner' # Helps clean database between test runs. http://cukes.info/
+
 end
